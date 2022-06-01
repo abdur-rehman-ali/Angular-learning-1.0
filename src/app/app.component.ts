@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-learning';
   name = 'joiya';
+  public data = 'data from parent component';
+  public message = "";
 }
