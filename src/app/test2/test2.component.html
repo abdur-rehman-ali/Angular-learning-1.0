@@ -1,0 +1,15 @@
+<h2>Class binding</h2>
+<h3 class='is-success'>Ali joiya</h3>
+<h3 [class]='successClass'>Ali joiya</h3>
+<h3 class='{{successClass}}'>Ali joiya</h3>
+
+<h1>ngClass with string</h1>
+<h3 ngClass="is-success uppercase">Feedback</h3>
+<h3 [ngClass]="'is-danger uppercase'">Feedback</h3>
+
+<h1>ngClass with array</h1>
+<h3 [ngClass]="['is-danger','uppercase']" >Feedback</h3>
+
+<h1>ngClass with object</h1>
+<h3 [ngClass]="{'is-danger':true,'uppercase':true}" >Feedback</h3>
+<h3 [ngClass]="messageClass" >Feedback</h3>
