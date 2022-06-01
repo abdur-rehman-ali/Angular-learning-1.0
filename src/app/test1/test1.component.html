@@ -1,0 +1,15 @@
+<p>Attribute vs property</p>
+<ul>
+    <li>HTML attribute : Attribute initalize DOM properties and they are done</li>
+    <li>HTML attribute : Attribute value does not change once they are initialized</li>
+    <li>DOM property : Value can change</li>
+</ul>
+<input [id] = "myId" type="text" value="ali"><br>
+<p>Below is property binding using interpolation</p><br>
+<input id = {{myId}} type="text" value="ali"><br>
+<p>With interpolation we can only bind property having string value we cannot bind boolean property</p><br>
+<input disabled id = {{myId}} type="text" value="ali">
+<p>Example of boolean properties</p>
+<input disabled="false" id = {{myId}} type="text" value="ali">
+<input [disabled]="isDisabled" id = {{myId}} type="text" value="ali">
+<input bind-disabled="isDisabled" id = {{myId}} type="text" value="ali">
