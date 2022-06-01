@@ -1,0 +1,15 @@
+<h1>style binding</h1>
+<p style="color:red;" >Feedback</p>
+
+<p [style]="{'color':'green',
+               'text-transform':'uppercase'}" >
+               Feedback</p>
+
+<p [ngStyle]="{'color':'red',
+               'text-transform':'uppercase'}" >
+               Feedback</p>
+
+<p [style.color]="hasError ? 'red':'green'">Feedback</p>
+
+
+<p [ngStyle]="message" >Feedback with object</p>
